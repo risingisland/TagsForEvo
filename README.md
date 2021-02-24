@@ -1,5 +1,5 @@
 # TagsForEvo
-Add tags to documents, display in DocLister, display in pages, and include a tag-cloud.
+Add tags to documents, display tags in DocLister, display tags in pages, and include a tag-cloud.
 
 Fashened to replace the old Ditto Blog tags with Doclister for Evo v1.4.12 and above.
 
@@ -11,13 +11,15 @@ Fashened to replace the old Ditto Blog tags with Doclister for Evo v1.4.12 and a
 * Display tags on (item) page
 
 ## Included in Package:
-* **Snippets** 
+**Snippets** 
 * TagsLandingPage: 
 * TagsCloud: 
 * TagsInSummary: 
 * TagsInPage: 
-* **TVs** 
-* **Chunks** 
+**TVs** 
+* docTags:
+**Chunks** 
+* TagsLandingPageTPL:
 
 
 # Create a Doclister Blog like in Ditto or Update your old Ditto Blog to Doclister
