@@ -3,12 +3,6 @@ Add tags to documents, display tags in DocLister, display tags in pages, and inc
 
 Fashened to replace the old Ditto Blog tags with Doclister for Evo v1.4.12 and above.
 
-## Goals
-* Create a Blog like in Ditto, with tags
-* Create a Tags Landing page like Ditto with DocLister
-* Tags URLS like Ditto: 100% compatible with TagLinks and TvTagCloud snippets. ie:  ```tags.html?tags=tag+test```
-* Display tags in Doclister item
-* Display tags on (item) page
 
 ## Included in Package:
 **Snippets:** 
@@ -23,10 +17,32 @@ Fashened to replace the old Ditto Blog tags with Doclister for Evo v1.4.12 and a
 **Chunks:** 
 * **TagsLandingPageTPL:** Template used for "TagsLandingPage" call
 
+#### NOTE: the tutorial is based and tested on Evolution v1.4.12 & v2.04 demo content
 
-# Create a Doclister Blog like in Ditto or Update your old Ditto Blog to Doclister
 
-#### NOTE: the tutorial is based and tested on evolution 1.4 demo content
+# How to setup...
+
+## 1. Create Tags Landing Page
+
+* Create new Resource named, for example, "Tags".
+
+A few recomendations, but not required: un-mark "Show in menu" & "Rich-text"
+
+* Include the following call:
+
+```
+<h2>You are viewing tags for: <span style="color:green;">[+tags+]<span></h2><hr>
+[[TagsLandingPage?
+	&parents=`2`
+	&display=`10`
+	&depth=`4`
+	&tagTV=`docTags`
+	&tvList=`image,docTags`
+	&summary=`notags,len:350`
+	&tpl=`TagsLandingPageTPL`
+	&paginate=`1`
+]]
+```
 
 ## 1) Blog Page (id 2)
 
