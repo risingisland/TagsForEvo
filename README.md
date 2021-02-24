@@ -17,16 +17,16 @@ Fashened to replace the old Ditto Blog tags with Doclister for Evo v1.4.12 and a
 **Chunks:** 
 * **TagsLandingPageTPL:** Template used for "TagsLandingPage" call
 
-#### NOTE: the tutorial is based and tested on Evolution v1.4.12 & v2.04 demo content
-
 
 # How to setup...
+
+#### NOTE: the tutorial is based and tested on Evolution v1.4.12 & v2.04 demo content
 
 ## 1. Create Tags Landing Page
 
 * Create new Resource named, for example, "Tags".
 
-A few recomendations, but not required: un-mark "Show in menu" & "Rich-text"
+A few recomendations, but not required: un-mark "Show in menu" & "Rich-text".
 
 * Include the following call:
 
@@ -34,7 +34,7 @@ A few recomendations, but not required: un-mark "Show in menu" & "Rich-text"
 <h2>You are viewing tags for: <span style="color:green;">[+tags+]<span></h2><hr>
 [[TagsLandingPage?
 	&parents=`2`
-	&display=`10`
+	&display=`2`
 	&depth=`4`
 	&tagTV=`docTags`
 	&tvList=`image,docTags`
@@ -43,6 +43,22 @@ A few recomendations, but not required: un-mark "Show in menu" & "Rich-text"
 	&paginate=`1`
 ]]
 ```
+
+## 2. Add Tag-Cloud
+
+* Include the following call into the desired page template:
+
+(For example, page sidebar.)
+
+```
+<h2>Tag-Cloud:<h2>
+[!TagsCloud? &parent=`2` &landing=`50` &tvTags=`docTags` &showCount=`0`!]
+<hr>
+```
+
+## 3. Add Tag-Cloud
+
+
 
 ## 1) Blog Page (id 2)
 
