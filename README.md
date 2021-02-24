@@ -8,8 +8,8 @@ Fashened to replace the old Ditto Blog tags with Doclister for Evo v1.4.12 and a
 **Snippets:** 
 * **TagsLandingPage:** Call to display in Landing Page
 * **TagsCloud:** Call to add a Tag-Cloud
-* **TagsInSummary:** 
-* **TagsInPage:** 
+* **TagsInPage:** Call to add the tags to pages & summaries
+* **TagsInSummary:** Secondary method to include in summaries
 
 **TVs:** 
 * **documentTags:** TV to add comma seperated tags to documents
@@ -99,7 +99,37 @@ Example:
 
 ## 4. Adding Tags to your DocLsiter call
 
+
 #### Method 1:
+
+* If your &tpl is referencing a Chunk template
+* Recommended method because of how Evo's parsing order.
+
+If &tpl is refferencing a Chunk, include the "TagsInPage" Snippet:
+
+```
+[[TagsInPage? &id=`[+id+]` &value=`[+documentTags+]` &separator=`, ` &path=`50` &label=`Tags: `]]
+```
+
+Example:
+```
+<div class="dl_summaryPost">
+	[+blog-image+]	
+	<h3><a href="[~[+id+]~]" title="[+e.title+]">[+e.title+]</a></h3>
+	<div class="dl_info">
+		By <strong>[+user.username.createdby+]</strong> on [+date+].
+		<a href="[+url+]#commentsAnchor">Comments <span class="badge">[+jotcount+]</span></a>
+		<!-- Start Tags -->
+		[[TagsInPage? &id=`[+id+]` &value=`[+documentTags+]` &separator=`, ` &path=`50` &label=`Tags: `]]
+		<!-- End Tags -->
+	</div>
+	[+summary+]
+	<p class="dl_link">[+link+]</p>
+</div>
+```
+
+
+#### Method 2:
 
 * If your &tpl is using @CODE
 
@@ -136,33 +166,6 @@ Example:
 		</div>` 
 	&paginate=`1` 
 ]]
-```
-
-#### Method 2:
-
-* If your &tpl is referencing a Chunk template
-
-If &tpl is refferencing a Chunk, include the "TagsInPage" Snippet:
-
-```
-[[TagsInPage? &id=`[+id+]` &value=`[+documentTags+]` &separator=`, ` &path=`50` &label=`Tags: `]]
-```
-
-Example:
-```
-<div class="dl_summaryPost">
-	[+blog-image+]	
-	<h3><a href="[~[+id+]~]" title="[+e.title+]">[+e.title+]</a></h3>
-	<div class="dl_info">
-		By <strong>[+user.username.createdby+]</strong> on [+date+].
-		<a href="[+url+]#commentsAnchor">Comments <span class="badge">[+jotcount+]</span></a>
-		<!-- Start Tags -->
-		[[TagsInPage? &id=`[+id+]` &value=`[+documentTags+]` &separator=`, ` &path=`50` &label=`Tags: `]]
-		<!-- End Tags -->
-	</div>
-	[+summary+]
-	<p class="dl_link">[+link+]</p>
-</div>
 ```
 
 
