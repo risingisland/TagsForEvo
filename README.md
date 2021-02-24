@@ -10,11 +10,14 @@ Fashened to replace the old Ditto Blog tags with Doclister for Evo v1.4.12 and a
 * Display tags in Doclister item
 * Display tags on (item) page
 
-## Included Extras
-* **DLlandingTags** snippet: based on [run_doclister_blog](https://gist.github.com/pmfx/bef18541b1835d0855ececf231fa973d) by @pmfx - renamed, added tagTV parameter, tags placeholder, more dl params and improved to fit ditto tags url parameters (&tags=)
-* **DLitemTags** snippet: based on [run_doclister_itemTags](https://gist.github.com/pmfx/66da4628fbfd34d7a7d4019d70287c07) by @pmfx - just renamed :smile:
-* **taglinks** https://modx.com/extras/package/taglinks
-* **TvTagCloud** https://github.com/extras-evolution/TvTagCloud
+## Included in Package:
+* **Snippets** 
+* TagsLandingPage: 
+* TagsCloud: 
+* TagsInSummary: 
+* TagsInPage: 
+* **TVs** 
+* **Chunks** 
 
 
 # Create a Doclister Blog like in Ditto or Update your old Ditto Blog to Doclister
