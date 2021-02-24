@@ -1,5 +1,6 @@
 # TagsForEvo
-Tutorial and resources to replace Ditto Blog tags with Doclister
+Add tags to documents, display in DocLister, display in pages, and include a tag-cloud.
+Fashened to replace the old Ditto Blog tags with Doclister for Evo v1.4.12 and above.
 
 ## Goals
 * Create a Blog like in Ditto, with tags
@@ -7,11 +8,6 @@ Tutorial and resources to replace Ditto Blog tags with Doclister
 * Tags URLS like Ditto: 100% compatible with TagLinks and TvTagCloud snippets. ie:  ```tags.html?tags=tag+test```
 * Display tags in Doclister item
 * Display tags on (item) page
-
-# Inspirations: 
-* https://github.com/evolution-cms/evolution/issues/176
-* https://github.com/evolution-cms/evolution/issues/451
-* solution idea by [@pmfx](https://github.com/pmfx) https://github.com/evolution-cms/evolution/issues/176#issuecomment-325036799
 
 ## Included Extras
 * **DLlandingTags** snippet: based on [run_doclister_blog](https://gist.github.com/pmfx/bef18541b1835d0855ececf231fa973d) by @pmfx - renamed, added tagTV parameter, tags placeholder, more dl params and improved to fit ditto tags url parameters (&tags=)
@@ -140,4 +136,4 @@ With [tagLinks](https://github.com/Nicola1971/Doclister-Tags-in-Ditto-Style/blob
 ```
 ![tagcloud](https://user-images.githubusercontent.com/7342798/35296362-1a1a8ef4-007c-11e8-9939-124521ab22e4.png)
 
-# The End :)
+
