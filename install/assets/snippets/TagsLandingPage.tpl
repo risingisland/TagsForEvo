@@ -5,7 +5,7 @@
  * Create a Tags Landing Page in DocLister style
  *
  * @category 	snippet
- * @version 	2.2
+ * @version 	2.5
  * @internal	@properties
  * @internal	@modx_category Navigation
  * @internal    @installset base, sample
