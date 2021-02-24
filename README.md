@@ -18,6 +18,7 @@ Fashened to replace the old Ditto Blog tags with Doclister for Evo v1.4.12 and a
 * **TagsLandingPageTPL:** Template used for "TagsLandingPage" call
 
 
+
 # How to setup...
 
 #### NOTE: the tutorial is based and tested on Evolution v1.4.12 & v2.04 demo content
@@ -28,7 +29,7 @@ Fashened to replace the old Ditto Blog tags with Doclister for Evo v1.4.12 and a
 
 (A few recomendations, but not required: un-mark "Show in menu" & "Rich-text".)
 
-* Include the following call:
+* Include the following call from "TagsLandingPage" Snippet:
 
 ```
 <h2>You are viewing tags for: <span style="color:green;">[+tags+]<span></h2><hr>
@@ -44,8 +45,20 @@ Fashened to replace the old Ditto Blog tags with Doclister for Evo v1.4.12 and a
 ]]
 ```
 
-* Adjust the template chunk "TagsLandingPageTPL" to your needs:
 
+
+* Include the needed "TagsInPage" call to  to the summary template to display the tags:
+
+```
+[[TagsInPage? &id=`[+id+]` &value=`[+docTags+]` &separator=`, ` &path=`50` &label=`Tags: `]]
+```
+
+Where "docTags" is the name of the TV that includes you tags and "50" is the ID of your tags landing page.
+
+
+* Adjust the landing pages summary template chunk "TagsLandingPageTPL" to your needs:
+
+Example:
 ```
 <div class="dl_summaryPost">
 	[+blog-image+]	
@@ -62,19 +75,11 @@ Fashened to replace the old Ditto Blog tags with Doclister for Evo v1.4.12 and a
 </div>
 ```
 
-* Needed call to display the tags:
-
-```
-[[TagsInPage? &id=`[+id+]` &value=`[+docTags+]` &separator=`, ` &path=`50` &label=`Tags: `]]
-```
-
-Where "docTags" is the name of the TV that includes you tags and "50" is the ID of your tags landing page.
-
 
 
 ## 2. Add Tag-Cloud
 
-* Include the following call into the desired page template:
+* Include the following "TagsCloud" Snippet call into the desired page template:
 
 (For example, page sidebar.)
 
