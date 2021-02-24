@@ -142,6 +142,8 @@ Example:
 
 * If your &tpl is referencing a Chunk template
 
+If &tpl is refferencing a Chunk, include the "TagsInPage" Snippet:
+
 ```
 [[TagsInPage? &id=`[+id+]` &value=`[+docTags+]` &separator=`, ` &path=`50` &label=`Tags: `]]
 ```
@@ -162,3 +164,10 @@ Example:
 	<p class="dl_link">[+link+]</p>
 </div>
 ```
+
+
+#### Credits and Side Notes:
+
+Most of the credit for this package goes to [@Nicola1971](https://github.com/Nicola1971) and his [Doclister-Tags-in-Ditto-Style](https://github.com/Nicola1971/Doclister-Tags-in-Ditto-Style)
+
+Files were cleaned up and renamed for a more logical deployment. As well as a few minor fixes and adjustments.
