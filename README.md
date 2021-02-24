@@ -12,16 +12,16 @@ Fashened to replace the old Ditto Blog tags with Doclister for Evo v1.4.12 and a
 
 ## Included in Package:
 **Snippets:** 
-* TagsLandingPage: 
-* TagsCloud: 
+* TagsLandingPage: Call to display in Landing Page
+* TagsCloud: Call to add a Tag-Cloud
 * TagsInSummary: 
 * TagsInPage: 
-* 
+
 **TVs:** 
-* docTags:
-* 
+* docTags: TV to add comma seperated tags to documents
+
 **Chunks:** 
-* TagsLandingPageTPL:
+* TagsLandingPageTPL: Template used for "TagsLandingPage" call
 
 
 # Create a Doclister Blog like in Ditto or Update your old Ditto Blog to Doclister
