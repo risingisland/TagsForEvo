@@ -1,5 +1,5 @@
 /**
- * docTags
+ * documentTags
  *
  * Comma delimited tags for the current document
  *

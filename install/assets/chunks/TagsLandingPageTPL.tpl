@@ -17,7 +17,7 @@
 		By <strong>[+user.username.createdby+]</strong> on [+date+].
 		<a href="[+url+]#commentsAnchor">Comments <span class="badge">[+jotcount+]</span></a>
 		<!-- Start Tags -->
-		[[TagsInPage? &id=`[+id+]` &value=`[+docTags+]` &separator=`, ` &path=`50` &label=`Tags: `]]
+		[[TagsInPage? &id=`[+id+]` &value=`[+documentTags+]` &separator=`, ` &path=`50` &label=`Tags: `]]
 		<!-- End Tags -->
 	</div>
 	[+summary+]

@@ -15,8 +15,8 @@
 /****************************************************
 
 Examples:
-	[!TagsCloud? &parent=`2` &landing=`50` &tvTags=`docTags` &showCount=`0`!]
-	[!TagsCloud? &parent=`2` &landing=`50` &tvTags=`docTags` &showCount=`1` &sort=`asc` &displayType=`list`!]
+	[!TagsCloud? &parent=`2` &landing=`50` &tvTags=`documentTags` &showCount=`0`!]
+	[!TagsCloud? &parent=`2` &landing=`50` &tvTags=`documentTags` &showCount=`1` &sort=`asc` &displayType=`list`!]
 
 
 REQUIRED PARAMETERS:

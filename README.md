@@ -12,7 +12,7 @@ Fashened to replace the old Ditto Blog tags with Doclister for Evo v1.4.12 and a
 * **TagsInPage:** 
 
 **TVs:** 
-* **docTags:** TV to add comma seperated tags to documents
+* **documentTags:** TV to add comma seperated tags to documents
 
 **Chunks:** 
 * **TagsLandingPageTPL:** Template used for "TagsLandingPage" call
@@ -37,8 +37,8 @@ Fashened to replace the old Ditto Blog tags with Doclister for Evo v1.4.12 and a
 	&parents=`2`
 	&display=`2`
 	&depth=`4`
-	&tagTV=`docTags`
-	&tvList=`image,docTags`
+	&tagTV=`documentTags`
+	&tvList=`image,documentTags`
 	&summary=`notags,len:350`
 	&tpl=`TagsLandingPageTPL`
 	&paginate=`1`
@@ -50,10 +50,10 @@ Fashened to replace the old Ditto Blog tags with Doclister for Evo v1.4.12 and a
 * Include the needed "TagsInPage" call to  to the summary template to display the tags:
 
 ```
-[[TagsInPage? &id=`[+id+]` &value=`[+docTags+]` &separator=`, ` &path=`50` &label=`Tags: `]]
+[[TagsInPage? &id=`[+id+]` &value=`[+documentTags+]` &separator=`, ` &path=`50` &label=`Tags: `]]
 ```
 
-Where "docTags" is the name of the TV that includes you tags and "50" is the ID of your tags landing page.
+Where "documentTags" is the name of the TV that includes you tags and "50" is the ID of your tags landing page.
 
 
 * Adjust the landing pages summary template chunk "TagsLandingPageTPL" to your needs:
@@ -67,7 +67,7 @@ Example:
 		By <strong>[+user.username.createdby+]</strong> on [+date+].
 		<a href="[+url+]#commentsAnchor">Comments <span class="badge">[+jotcount+]</span></a>
 		<!-- Start Tags -->
-		[[TagsInPage? &id=`[+id+]` &value=`[+docTags+]` &separator=`, ` &path=`50` &label=`Tags: `]]
+		[[TagsInPage? &id=`[+id+]` &value=`[+documentTags+]` &separator=`, ` &path=`50` &label=`Tags: `]]
 		<!-- End Tags -->
 	</div>
 	[+summary+]
@@ -85,7 +85,7 @@ Example:
 
 ```
 <h2>Tag-Cloud:<h2>
-[!TagsCloud? &parent=`2` &landing=`50` &tvTags=`docTags` &showCount=`0`!]
+[!TagsCloud? &parent=`2` &landing=`50` &tvTags=`documentTags` &showCount=`0`!]
 <hr>
 ```
 
@@ -94,7 +94,7 @@ Example:
 * Include the following call into the desired page template:
 
 ```
-[[TagsInPage? &tv=`docTags` &separator=`, ` &path=`50` &label=`Tags: `]]
+[[TagsInPage? &tv=`documentTags` &separator=`, ` &path=`50` &label=`Tags: `]]
 ```
 
 ## 4. Adding Tags to your DocLsiter call
@@ -106,7 +106,7 @@ Example:
 If @CODE is being used, include the "TagsInSummary" Snippet:
 
 ```
-[[TagsInSummary? &id=`tags` &tags=`[+docTags+]` &tagsLanding=`50`]]
+[[TagsInSummary? &id=`tags` &tags=`[+documentTags+]` &tagsLanding=`50`]]
 ```
 
 Example:
@@ -116,7 +116,7 @@ Example:
 	&parents=`2` 
 	&display=`2`
 	&tvPrefix=``
-	&tvList=`image,docTags`
+	&tvList=`image,documentTags`
 	&prepare=`prepareBlog`
 	&summary=`notags,len:350` 
 	//&tpl=`TagsLandingPageTPL`
@@ -128,7 +128,7 @@ Example:
 				By <strong>[+author+]</strong> on [+date+].
 				<a href="[+url+]#commentsAnchor">Comments <span class="badge">[+jotcount+]</span></a><br>
 				<!-- Start Tags -->
-				Tags: [[TagsInSummary? &id=`tags` &tags=`[+docTags+]` &tagsLanding=`50`]]
+				Tags: [[TagsInSummary? &id=`tags` &tags=`[+documentTags+]` &tagsLanding=`50`]]
 				<!-- End Tags -->
 			</div>
 			[+summary+]
@@ -145,7 +145,7 @@ Example:
 If &tpl is refferencing a Chunk, include the "TagsInPage" Snippet:
 
 ```
-[[TagsInPage? &id=`[+id+]` &value=`[+docTags+]` &separator=`, ` &path=`50` &label=`Tags: `]]
+[[TagsInPage? &id=`[+id+]` &value=`[+documentTags+]` &separator=`, ` &path=`50` &label=`Tags: `]]
 ```
 
 Example:
@@ -157,7 +157,7 @@ Example:
 		By <strong>[+user.username.createdby+]</strong> on [+date+].
 		<a href="[+url+]#commentsAnchor">Comments <span class="badge">[+jotcount+]</span></a>
 		<!-- Start Tags -->
-		[[TagsInPage? &id=`[+id+]` &value=`[+docTags+]` &separator=`, ` &path=`50` &label=`Tags: `]]
+		[[TagsInPage? &id=`[+id+]` &value=`[+documentTags+]` &separator=`, ` &path=`50` &label=`Tags: `]]
 		<!-- End Tags -->
 	</div>
 	[+summary+]

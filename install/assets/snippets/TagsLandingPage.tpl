@@ -20,8 +20,8 @@ Example:
 		&parents=`2`
 		&display=`10`
 		&depth=`4`
-		&tagTV=`docTags`
-		&tvList=`image,docTags`
+		&tagTV=`documentTags`
+		&tvList=`image,documentTags`
 		&summary=`notags,len:350`
 		&tpl=`TagsLandingPageTPL`
 		&paginate=`1`
@@ -30,7 +30,7 @@ Example:
 ****************************************************/
 
 $id = isset( $id ) ? $id : "tags";
-$tagTV = isset( $tagTV ) ? $tagTV : "docTags";
+$tagTV = isset( $tagTV ) ? $tagTV : "documentTags";
 $parents = isset( $parents ) ? $parents : "";
 $display = isset( $display ) ? $display : "";
 $depth = isset( $depth ) ? $depth : "";

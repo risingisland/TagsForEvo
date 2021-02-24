@@ -16,9 +16,9 @@
 
 Examples:
 
-	To show within a page:			[[TagsInPage? &tv=`docTags` &separator=`, ` &path=`50` &label=`Tags: `]]
+	To show within a page:			[[TagsInPage? &tv=`documentTags` &separator=`, ` &path=`50` &label=`Tags: `]]
 	
-	Show in a doclister chunk tpl:	[[TagsInPage? &id=`[+id+]` &value=`[+docTags+]` &separator=`, ` &path=`50` &label=`Tags: `]] 
+	Show in a doclister chunk tpl:	[[TagsInPage? &id=`[+id+]` &value=`[+documentTags+]` &separator=`, ` &path=`50` &label=`Tags: `]] 
 	
 		(where "50" is the ID of your tags landing page)
 		

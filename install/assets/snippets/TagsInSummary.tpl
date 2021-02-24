@@ -15,9 +15,9 @@
 /****************************************************
 
 Example:
-	[[TagsInSummary? &id=`tags` &tags=`[+docTags+]` &tagsLanding=`50`]]
+	[[TagsInSummary? &id=`tags` &tags=`[+documentTags+]` &tagsLanding=`50`]]
 
-	(be sure to add "docTags" to &tvList)
+	(be sure to add "documentTags" to &tvList)
 	
 ****************************************************/
 
